@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters.command import Command
 from aiogram.enums import ParseMode
 from aiogram.types import BotCommand
-from root import TOKEN, Admin
+from root import TOKEN, Admins
 from buttons import button, button_girl
 
 dp = Dispatcher()
