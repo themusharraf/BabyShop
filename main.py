@@ -10,12 +10,13 @@ from buttons import button
 dp = Dispatcher()
 
 
+
 async def startup_answer(bot: Bot):
     await bot.send_message(5611541842, "Bot ishga tushdi! ✅")
 
 
 async def shutdown__answer(bot: Bot):
-    await bot.send_message(5611541842, "Bot ishga to'xtadi! ❗️")
+    await bot.send_message(5611541842, "Bot ishga to'xtadi!❗️")
 
 
 @dp.message(Command("start"))
