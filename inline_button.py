@@ -1,9 +1,6 @@
-from aiogram.utils.keyboard import InlineKeyboardBuilder
-from aiogram import types
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-inline = InlineKeyboardBuilder()
-inline.row(types.InlineKeyboardButton(text="Ustki kiyimlar👗"),
-inline.row(types.InlineKeyboardButton(text="Sotib olish", url="https://t.me/MYSTERIOUS_06")))
-
-
-
+inline_btn = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="Batafsil", callback_data="alert")],
+    [InlineKeyboardButton(text="Sotib Olish 🛒", callback_data="inline", url="https://t.me/MYSTERIOUS_06")]
+])
